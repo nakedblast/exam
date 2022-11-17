@@ -94,7 +94,7 @@ export
             date.setDate(date.getDate() + (value * 7));
             return date;
         }
-
+could not reproduce with correct input values 
 17. **Having the following DB tables diagram:** *=> 10 points*
 
 ![](https://github.com/lentyaishe/masa-exam-2/blob/dev/resources/db-schema.jpg)
@@ -108,13 +108,15 @@ You need to write a query that returns for each user a full data. Consider that 
 | Patrice Raymond | Not an eployee |  |
 
 18. **Write a method in JS/TS that gets as an argument 2 dates and returns a boolean value of whether those dates share the same month**. *=> 5 points*
-
+public static compareDateByMonth (date1: Date, date2: Date){
+    return (date1.getMonth()===date2.getMonth())
+}
 19. **Explain the following piece of code:** *=> 5 points*
 
         public static dictionaryToArrayOfObjects<T>(input: _.Dictionary<T>): T[] {
             return _.map(Object.getOwnPropertyNames(input), (key: string) => input[key]);
         }
-
+It gets a dictionary from, presumably, an API and then maps for it to be accessible whithin the code 
 20. **Fix the following code and fill the required gaps in it by the coding standards. The purpose of this code is to verify the user is a member of a specific role and in case the user is, a true return value should be returned by the isUserPermitted() method, otherwise false. Treat the comments as actual code written that should not be changed.** *=> 15 points*
 
 		interface user {
@@ -129,7 +131,7 @@ You need to write a query that returns for each user a full data. Consider that 
 			first_name: string;
 			last_name: string;
 			role_id: number;
-			role_title
+			role_title: string
 		}
 
 		interface role {
@@ -139,7 +141,7 @@ You need to write a query that returns for each user a full data. Consider that 
 
 		enum Role {
 			Administrator = 1,
-			RegularUser
+			RegularUser = 0
 		}
 		
 		public isUserPermitted(userId: number, roles: Role[]): Promise<bool> {
@@ -148,7 +150,7 @@ You need to write a query that returns for each user a full data. Consider that 
 					this.getUser(userId),
 				])
 				.then((user: user) => {
-					resolve(user.roles.indexOf(roles[0]) > -1);
+					resolve(user.roles.indexOf(roles[0]) > 0);
 				});
 			});
 		}
