@@ -28,7 +28,7 @@
 
 4. **What is the code of a request redirection in HTTP protocol?** *=> 2 points*
  - [ ] 2xx
- - [ ] 3xx
+ - [+] 3xx
  - [ ] 4xx
  - [ ] 5xx
 
@@ -78,7 +78,7 @@ It is a subroutine, that can automaticly create objects, if given needed params.
 A string, paseed to the DB to establish comunication 
 
 13. **IDENTITY & SEED** *=> 5 points*
-It is used to initialize the field with a specific value
+It is used to initialize the field with a specific base value
 14. **Abstract class** *=> 5 points*
 It is a class, does not reqier definition of propertis, but can not be initialized
 15. **Export keyword in nodejs code** *=> 4 points*
@@ -114,7 +114,7 @@ You need to write a query that returns for each user a full data. Consider that 
         public static dictionaryToArrayOfObjects<T>(input: _.Dictionary<T>): T[] {
             return _.map(Object.getOwnPropertyNames(input), (key: string) => input[key]);
         }
-
+ 
 20. **Fix the following code and fill the required gaps in it by the coding standards. The purpose of this code is to verify the user is a member of a specific role and in case the user is, a true return value should be returned by the isUserPermitted() method, otherwise false. Treat the comments as actual code written that should not be changed.** *=> 15 points*
 
 		interface user {
