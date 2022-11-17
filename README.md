@@ -82,7 +82,7 @@ It is used to initialize the field with a specific value
 14. **Abstract class** *=> 5 points*
 It is a class, does not reqier definition of propertis, but can not be initialized
 15. **Export keyword in nodejs code** *=> 4 points*
-exports
+export
  
 ## Part II: Practice on paper *=> 45 points*
 
