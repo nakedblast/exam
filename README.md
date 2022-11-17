@@ -72,15 +72,17 @@
 ## Section B: Please, explain the following terms the best way you can *=> 22 points*
 
 11. **Constructor** *=> 4 points*
+It is a subroutine, that can automaticly create objects, if given needed params.
 
 12. **Connection string** *=> 4 points*
+A string, paseed to the DB to establish comunication 
 
 13. **IDENTITY & SEED** *=> 5 points*
-
+It is used to initialize the field with a specific value
 14. **Abstract class** *=> 5 points*
-
+It is a class, does not reqier definition of propertis, but can not be initialized
 15. **Export keyword in nodejs code** *=> 4 points*
-
+exports
  
 ## Part II: Practice on paper *=> 45 points*
 
