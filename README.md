@@ -28,7 +28,7 @@
 
 4. **What is the code of a request redirection in HTTP protocol?** *=> 2 points*
  - [ ] 2xx
- - [ ] 3xx
+ - [+] 3xx
  - [ ] 4xx
  - [ ] 5xx
 
